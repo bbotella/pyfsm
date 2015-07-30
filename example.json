@@ -1,0 +1,32 @@
+{
+    "CREATED": [
+        {
+            "event": "move_to_1",
+            "dest": "STATE1"
+        }
+    ],
+    "STATE1": [
+        {
+            "event": "move_to_created",
+            "dest": "CREATED"
+        },
+        {
+            "event": "move_to_2",
+            "dest": "STATE2"
+        }
+    ],
+    "STATE2": [
+        {
+            "event": "move_to_1",
+            "dest": "STATE1"
+        },
+        {
+            "event": "move_to_created",
+            "dest": "CREATED"
+        },
+        {
+            "event": "stay_here",
+            "dest": "STATE2"
+        }
+    ]
+}
