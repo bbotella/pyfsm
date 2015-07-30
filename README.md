@@ -8,7 +8,8 @@ pip install -r requirements.txt
 
 ## Usage
 Finite State Machines must be defined in json. See example provided.
-
-
+```python
+python example.py
+```
 ## TODO
 
