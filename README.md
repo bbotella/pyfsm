@@ -18,3 +18,4 @@ python example.py
 - Add json docs
 - Add loaders for other formats
 - Create package
+- Add callbacks docs
