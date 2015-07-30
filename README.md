@@ -13,3 +13,8 @@ python example.py
 ```
 ## TODO
 
+- Add tests
+- Add fsm generator
+- Add json docs
+- Add loaders for other formats
+- Create package
