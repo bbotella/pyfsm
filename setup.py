@@ -3,7 +3,7 @@ setup(
     name = 'pyfsm',
     packages = ['pyfsm'], # this must be the same as the name above
     version = '0.1',
-    description = 'A random test lib',
+    description = 'A library to make Finite States Machines',
     author = 'Bernardo Botella',
     author_email = 'contacto@bernardobotella.com',
     url = 'https://github.com/bbotella/pyfsm', # use the URL to the github repo
