@@ -1,4 +1,4 @@
-# pyfsm (WIP)
+# pyfsm
 
 This is a library aimed to help to implement Finite State Machines. It's not stable yet
 
@@ -60,5 +60,4 @@ if __name__ == '__main__':
 - Add fsm generator
 - Add json docs
 - Add loaders for other formats
-- Create package
 - Add callbacks docs

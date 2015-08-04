@@ -1,0 +1,14 @@
+language: python
+python:
+- '2.6'
+- '2.7'
+install: pip install -r requirements.txt
+script: nosetests
+deploy:
+  provider: pypi
+  user: bbotella
+  password:
+    secure: rJ/ep/AhWEbILV+fQiWbKvzRQB+CoIu45Az/KK8GR+BTvbBiwHKuBnp+mntrPO1/A2oQtnOJxUnYxp/ROfUCJHa3FeQsAxZCy/GyfmeiKl5EKw2eg9ig+aXu+rPR3ydI05PUoAMvapdWVyeqevVYxx+BzC16w8NsUxQoUv/KbFzev9puuXwKY/6pRMqi9ndqtj8tSBPnp1c9BzLuo52xbhfhRMbC+sjwT1lOgPYkgCwN6K/vdARVNcxpzrFYwk/qg2QAYB/yLVpWkODunWdibmsKqDoimR3eHlGaGztiHA5ZCMnvCsUEuV9q0fjZLYzWMc50EaPmOBE1iYwzXT1xSFZIQy62d4TV/wCHbW0gdViFrjqzbW5ILpbfMb0Je9ygF23BbjtKkwcY3Zp/QqSE97U1ikuA3wXF4KtWQHcr/vVXwmfbU7GfKv4erGrhOyi0+DJwD2Hg9vMXtu9nz2JFg62SY8g9DB/af/BcuYXM3pw1zEgZDkdrS7oyVT3FLEXfG2zXRAcayCSjkdg9OxXIP7kl8iYaGrTXJtJx7edzJJIibQDUbrHkRK/7KQ52sIhgPeWLWfWmE4VEn3smItzhhHB/wkRnweHz8GuV717I7K5xelS9lTqJUMRt/XE/jqSqimqIAvj1rTjXWM1moWjIL0INiqhVoVihoO5wMoaMAtc=
+  on:
+    tags: true
+    repo: bbotella/pyfsm
