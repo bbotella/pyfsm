@@ -57,3 +57,7 @@ class PyFSMTest(unittest.TestCase):
     def test_transition(self):
         self.pyFsm.event('move_to_1', 'Message')
         self.assertEqual(self.pyFsm.current_state, 'STATE1')
+
+    def test_reset_initial(self):
+        self.pyFsm.reset_initial_state()
+        self.assertEqual(self.pyFsm.current_state, 'CREATED')

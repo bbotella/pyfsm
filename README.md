@@ -60,7 +60,7 @@ PyFSM uses tox to manage tests.
 
 ```
 pip install tox
-tox
+tox -r
 ```
 
 

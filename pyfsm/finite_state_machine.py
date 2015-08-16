@@ -18,6 +18,7 @@ class FiniteStateMachine(object):
         if not self.current_state or self.current_state not in self.fsm.keys():
             raise NotCurrentStateException()
         self.states = self.fsm.keys()
+        self.initial_state = self.current_state
 
     def event(self, event_name, msg):
         if not self.is_valid_transition(event_name):
@@ -48,3 +49,6 @@ class FiniteStateMachine(object):
             eval('self.on_'+new_state.lower()+'(msg)')
         except AttributeError as e:
             pass
+
+    def reset_initial_state(self):
+        self.current_state = self.initial_state
