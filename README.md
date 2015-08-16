@@ -3,8 +3,9 @@
 This is a library aimed to help to implement Finite State Machines. It's not stable yet
 
 ## Requirements
+```
 pip install -r requirements.txt
-
+```
 
 ## Usage
 Finite State Machines must be defined in json. See example provided.
@@ -54,9 +55,17 @@ if __name__ == '__main__':
     print fsm.current_state
 ```
 
+## Testing
+PyFSM uses tox to manage tests.
+
+```
+pip install tox
+tox
+```
+
+
 ## TODO
 
-- Add tests
 - Add fsm generator
 - Add json docs
 - Add loaders for other formats
