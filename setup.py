@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
     name = 'pyfsm',
     packages = ['pyfsm'], # this must be the same as the name above
-    version = '0.3',
+    version = '0.4',
     description = 'A library to make Finite States Machines',
     author = 'Bernardo Botella',
     author_email = 'contacto@bernardobotella.com',
