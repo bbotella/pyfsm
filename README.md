@@ -53,6 +53,11 @@ if __name__ == '__main__':
     fsm.event('move_to_1', {})
     fsm.event('move_to_created', {})
     print fsm.current_state
+    fsm.event('move_to_1', {})
+    fsm.event('move_to_2', {})
+    fsm.reset_initial_state()
+    print fsm.current_state
+    
 ```
 
 ## Testing
